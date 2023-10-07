@@ -6,7 +6,7 @@ import {markdownSchema} from 'sanity-plugin-markdown'
 
 export default defineConfig({
   name: 'default',
-  title: 'studio.ineza.codes',
+  title: 'Garden Studio 🌳⚙️',
 
   projectId: 'av1qyq1c',
   dataset: 'production',
