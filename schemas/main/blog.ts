@@ -10,6 +10,14 @@ export default defineType({
       type: 'string',
     }),
     defineField({
+      name: 'slug',
+      type: 'slug',
+      options: {
+        source: 'title',
+        maxLength: 100,
+      },
+    }),
+    defineField({
       name: 'date',
       type: 'date',
     }),
