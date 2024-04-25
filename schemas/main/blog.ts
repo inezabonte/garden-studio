@@ -8,6 +8,7 @@ export default defineType({
     defineField({
       name: 'title',
       type: 'string',
+      validation: (Rule) => Rule.required().error('A title is required'),
     }),
     defineField({
       name: 'slug',
@@ -20,11 +21,6 @@ export default defineType({
     defineField({
       name: 'date',
       type: 'date',
-    }),
-    defineField({
-      name: 'tags',
-      type: 'array',
-      of: [{type: 'string'}],
     }),
     defineField({
       name: 'coverImage',
